@@ -4,7 +4,7 @@
 
 <h3>✨ 一键生成专业级播客 ✨</h3>
 
-**豆包大模型 + 多音色 TTS + BGM 混音 + 智能字幕**  
+**豆包大模型 + 多音色 TTS + 混音 + 智能字幕**  
 从创意到成品，只需 2 分钟 | 成本低至 ¥0.68/集
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.1.6-blue?style=flat-square)](https://www.typescriptlang.org/)
