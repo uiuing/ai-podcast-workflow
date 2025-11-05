@@ -90,11 +90,7 @@ npm start
   - ✅ 自然对话节奏
   - ✅ 前奏/尾奏处理
 
-<audio controls>
-  <source src="output/audios/35岁危机真困境还是伪命题_1762311727550.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放。
-</audio>
-
+🎧 **[点击进入下载完整音频](output/audios/35岁危机真困境还是伪命题_1762311727550.mp3)**
 
 </td>
 </tr>
