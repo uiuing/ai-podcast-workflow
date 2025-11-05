@@ -20,7 +20,7 @@
 
 ```bash
 # 克隆项目
-git clone <your-repo-url>
+git clone https://github.com/uiuing/ai-podcast-workflow.git
 cd ai-podcast-workflow
 
 # 安装依赖
