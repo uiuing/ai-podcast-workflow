@@ -1,0 +1,174 @@
+{
+  "textModels": {
+    "doubao-seed-1.6-vision": {
+      "name": "豆包-1.6-Vision",
+      "description": "支持视觉的通用模型",
+      "endpoint": "doubao-seed-1-6-vision",
+      "pricing": {
+        "tiers": [
+          {
+            "inputMin": 0,
+            "inputMax": 32000,
+            "inputPrice": 0.80,
+            "outputPrice": 8.00,
+            "cacheHitPrice": 0.16
+          },
+          {
+            "inputMin": 32001,
+            "inputMax": 128000,
+            "inputPrice": 1.20,
+            "outputPrice": 16.00,
+            "cacheHitPrice": 0.16
+          },
+          {
+            "inputMin": 128001,
+            "inputMax": 256000,
+            "inputPrice": 2.40,
+            "outputPrice": 24.00,
+            "cacheHitPrice": 0.16
+          }
+        ]
+      }
+    },
+    "doubao-seed-1.6": {
+      "name": "豆包-1.6",
+      "description": "性能均衡的通用模型",
+      "endpoint": "doubao-seed-1-6-250615",
+      "pricing": {
+        "tiers": [
+          {
+            "inputMin": 0,
+            "inputMax": 32000,
+            "inputPrice": 0.80,
+            "outputPrice": 8.00,
+            "cacheHitPrice": 0.16
+          },
+          {
+            "inputMin": 32001,
+            "inputMax": 128000,
+            "inputPrice": 1.20,
+            "outputPrice": 16.00,
+            "cacheHitPrice": 0.16
+          },
+          {
+            "inputMin": 128001,
+            "inputMax": 256000,
+            "inputPrice": 2.40,
+            "outputPrice": 24.00,
+            "cacheHitPrice": 0.16
+          }
+        ]
+      }
+    },
+    "doubao-seed-1.6-thinking": {
+      "name": "豆包-1.6-Thinking",
+      "description": "深度思考模型",
+      "endpoint": "doubao-seed-1-6-thinking",
+      "pricing": {
+        "tiers": [
+          {
+            "inputMin": 0,
+            "inputMax": 32000,
+            "inputPrice": 0.80,
+            "outputPrice": 8.00,
+            "cacheHitPrice": 0.16
+          },
+          {
+            "inputMin": 32001,
+            "inputMax": 128000,
+            "inputPrice": 1.20,
+            "outputPrice": 16.00,
+            "cacheHitPrice": 0.16
+          },
+          {
+            "inputMin": 128001,
+            "inputMax": 256000,
+            "inputPrice": 2.40,
+            "outputPrice": 24.00,
+            "cacheHitPrice": 0.16
+          }
+        ]
+      }
+    },
+    "doubao-seed-1.6-flash": {
+      "name": "豆包-1.6-Flash",
+      "description": "快速响应模型",
+      "endpoint": "doubao-seed-1-6-flash-250828",
+      "pricing": {
+        "tiers": [
+          {
+            "inputMin": 0,
+            "inputMax": 32000,
+            "inputPrice": 0.15,
+            "outputPrice": 1.50,
+            "cacheHitPrice": 0.03
+          },
+          {
+            "inputMin": 32001,
+            "inputMax": 128000,
+            "inputPrice": 0.30,
+            "outputPrice": 3.00,
+            "cacheHitPrice": 0.03
+          },
+          {
+            "inputMin": 128001,
+            "inputMax": 256000,
+            "inputPrice": 0.60,
+            "outputPrice": 6.00,
+            "cacheHitPrice": 0.03
+          }
+        ]
+      }
+    }
+  },
+  "imageModels": {
+    "doubao-seedream-4.0": {
+      "name": "豆包-SeeDream-4.0",
+      "description": "高质量图片生成",
+      "endpoint": "doubao-seedream-4-0-250828",
+      "pricing": {
+        "pricePerImage": 0.20
+      },
+      "supportedSizes": ["1024x1024", "512x512", "768x768"]
+    },
+    "doubao-seedream-3.0": {
+      "name": "豆包-SeeDream-3.0-i2i",
+      "description": "图生图模型",
+      "endpoint": "doubao-seedream-3.0-t2i",
+      "pricing": {
+        "pricePerImage": 0.259
+      },
+      "supportedSizes": ["1024x1024", "512x512", "768x768"]
+    },
+    "doubao-seededit-3.0": {
+      "name": "豆包-SeeEdit-3.0-i2i",
+      "description": "图片编辑模型",
+      "endpoint": "doubao-seededit-3.0-i2i",
+      "pricing": {
+        "pricePerImage": 0.30
+      },
+      "supportedSizes": ["1024x1024", "512x512", "768x768"]
+    }
+  },
+  "ttsModels": {
+    "unified": {
+      "name": "TTS语音合成服务",
+      "description": "统一价格的TTS服务（不区分具体模型）",
+      "resourceId": "unified",
+      "pricing": {
+        "pricePerTenThousandCharacters": 4.5
+      },
+      "features": ["统一计费", "¥4.5/万字符"]
+    }
+  },
+  "ttsPricing": {
+    "pricePerTenThousandCharacters": 4.5,
+    "description": "所有TTS模型统一价格：¥4.5/万字符"
+  },
+  "defaultModels": {
+    "text": "doubao-seed-1.6-flash",
+    "image": "doubao-seedream-4.0",
+    "tts": "unified"
+  }
+}
+

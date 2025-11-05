@@ -1,0 +1,133 @@
+[
+  {
+    "id": "zh_female_tianmeitaozi_mars_bigtts",
+    "name": "糖糖",
+    "originalName": "甜美桃子",
+    "description": "女性、甜美活泼、生活娱乐轻快内容",
+    "gender": "female",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_female_kefunvsheng_mars_bigtts",
+    "name": "语嫣",
+    "originalName": "暖阳女声",
+    "description": "女性、温暖明亮、客服对话温馨提示",
+    "gender": "female",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "ICL_zh_female_qingyingduoduo_cs_tob",
+    "name": "灵儿",
+    "originalName": "轻盈朵朵",
+    "description": "女性、轻盈灵动、清新少女向内容",
+    "gender": "female",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_female_yingyujiaoyu_mars_bigtts",
+    "name": "婷娜",
+    "originalName": "Tina老师",
+    "description": "女性、专业教育、知识科普教学中英文",
+    "gender": "female",
+    "lang": "zh-CN,en-GB",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_female_linzhiling_mars_bigtts",
+    "name": "雅琳",
+    "originalName": "玲玲姐姐",
+    "description": "女性、亲切成熟、情感生活分享内容",
+    "gender": "female",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_male_livelybro_mars_bigtts",
+    "name": "志轩",
+    "originalName": "开朗弟弟",
+    "description": "男性、活泼开朗、青春活力年轻向",
+    "gender": "male",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_female_qinqienvsheng_moon_bigtts",
+    "name": "悦心",
+    "originalName": "亲切女声",
+    "description": "女性、温暖亲切、对话播客情感交流",
+    "gender": "female",
+    "lang": "zh-CN",
+    "note": "moon系列，可能有音色跳变风险",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "ICL_zh_female_wenyinvsheng_v1_tob",
+    "name": "婉清",
+    "originalName": "知心姐姐",
+    "description": "女性、温柔体贴、情感咨询心理疏导",
+    "gender": "female",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_male_xudong_conversation_wvae_bigtts",
+    "name": "乐天",
+    "originalName": "快乐小东",
+    "description": "男性、轻松愉快、娱乐对话日常分享",
+    "gender": "male",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_male_yuanboxiaoshu_moon_bigtts",
+    "name": "思远",
+    "originalName": "渊博小叔",
+    "description": "男性、成熟稳重、知识科普专业讲解",
+    "gender": "male",
+    "lang": "zh-CN",
+    "note": "moon系列，可能有音色跳变风险",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_female_wanwanxiaohe_moon_bigtts",
+    "name": "若晴",
+    "originalName": "湾湾小何",
+    "description": "女性、台湾口音、地域特色轻松对话",
+    "gender": "female",
+    "lang": "zh-TW",
+    "note": "moon系列，可能有音色跳变风险",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_male_jingqiangkanye_moon_bigtts",
+    "name": "侃然",
+    "originalName": "京腔侃爷",
+    "description": "男性、北京口音、脱口秀幽默中英文",
+    "gender": "male",
+    "lang": "zh-CN-Beijing,en-US",
+    "note": "moon系列，可能有音色跳变风险",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "zh_male_qingyiyuxuan_mars_bigtts",
+    "name": "晨阳",
+    "originalName": "阳光阿辰",
+    "description": "男性、阳光温暖、正能量励志青春",
+    "gender": "male",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  },
+  {
+    "id": "ICL_zh_male_you_tob",
+    "name": "建国",
+    "originalName": "油腻大叔",
+    "description": "男性、中年特色、角色扮演特定场景",
+    "gender": "male",
+    "lang": "zh-CN",
+    "model": "seed-tts-1.0"
+  }
+]
+

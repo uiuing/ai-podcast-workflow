@@ -1,0 +1,181 @@
+{
+  "podcast_formats": [
+    {
+      "id": "brief",
+      "name": "快闪洞察",
+      "word_count": "1200-2000字",
+      "audio_duration": "5-10分钟",
+      "description": "快速了解核心概念和要点",
+      "suitable_for": "快速预览、碎片时间、地铁通勤",
+      "content_depth": "浅层概览",
+      "dialogue_rounds": "15-25轮对话",
+      "avg_words_per_round": "80-100字"
+    },
+    {
+      "id": "standard",
+      "name": "沉浸解读",
+      "word_count": "2000-3000字",
+      "audio_duration": "10-15分钟",
+      "description": "详细讲解原理、案例和应用",
+      "suitable_for": "系统学习、开车通勤、跑步健身",
+      "content_depth": "中度深入",
+      "dialogue_rounds": "25-40轮对话",
+      "avg_words_per_round": "80-100字"
+    },
+    {
+      "id": "deep",
+      "name": "透彻剖析",
+      "word_count": "3000-4000字",
+      "audio_duration": "15-20分钟",
+      "description": "全面剖析理论、实践和前沿动态",
+      "suitable_for": "专业研究、深度学习、完整场景",
+      "content_depth": "深度剖析",
+      "dialogue_rounds": "40-50轮对话",
+      "avg_words_per_round": "80-100字"
+    }
+  ],
+  "podcast_styles": [
+    {
+      "id": "humorous_dialogue",
+      "name": "幽默对谈",
+      "description": "轻松愉快的双人对话，像朋友聊天一样学知识",
+      "tone": "幽默风趣、通俗易懂、亲切自然",
+      "interaction": "高频互动",
+      "recommended_for": ["brief", "standard"],
+      "features": [
+        "频繁互动，你一言我一语",
+        "用生活化比喻解释专业概念",
+        "适当加入玩笑和调侃",
+        "节奏轻快，不拖沓",
+        "像咖啡馆闲聊的氛围"
+      ]
+    },
+    {
+      "id": "manzai",
+      "name": "吐槽漫谈",
+      "description": "日式漫才风格，在欢笑中学习",
+      "tone": "搞笑吐槽、反差萌、节奏明快",
+      "interaction": "快节奏交锋",
+      "recommended_for": ["brief", "standard"],
+      "features": [
+        "用夸张误解引出知识点",
+        "快速吐槽和纠正形成反差",
+        "在笑声中完成知识传递",
+        "适度无厘头但不偏离主题",
+        "「等等！」「不对不对！」等经典吐槽"
+      ]
+    },
+    {
+      "id": "storytelling",
+      "name": "故事剧场",
+      "description": "用引人入胜的故事串联知识",
+      "tone": "娓娓道来、引人入胜、有画面感",
+      "interaction": "中等互动",
+      "recommended_for": ["standard", "deep"],
+      "features": [
+        "以真实案例或虚拟场景开场",
+        "故事推进中自然引出知识点",
+        "注重情节连贯性和画面感",
+        "结尾升华主题",
+        "像听广播剧一样的体验"
+      ]
+    },
+    {
+      "id": "interview",
+      "name": "深度访谈",
+      "description": "专业而不失温度的深度对话",
+      "tone": "专业严谨、逻辑清晰、有深度",
+      "interaction": "结构化互动",
+      "recommended_for": ["standard", "deep"],
+      "features": [
+        "按主题模块提问",
+        "从基础到进阶层层递进",
+        "注重论据和案例支撑",
+        "总结提炼关键要点",
+        "类似TED演讲的深度"
+      ]
+    },
+    {
+      "id": "debate",
+      "name": "思辨论坛",
+      "description": "多角度碰撞，激发批判性思维",
+      "tone": "观点鲜明、思辨性强、有火花",
+      "interaction": "高强度交锋",
+      "recommended_for": ["deep"],
+      "features": [
+        "呈现不同观点和立场",
+        "用反问和质疑推进讨论",
+        "鼓励批判性思维",
+        "最后总结各方观点",
+        "像圆桌派的思想碰撞"
+      ]
+    },
+    {
+      "id": "tutorial",
+      "name": "实战课堂",
+      "description": "手把手教学，边听边学",
+      "tone": "耐心细致、步骤清晰、实用为王",
+      "interaction": "师生互动",
+      "recommended_for": ["standard", "deep"],
+      "features": [
+        "分步骤详细讲解",
+        "强调操作要点和注意事项",
+        "配合实例演示",
+        "设置练习和检验环节",
+        "像在线课程一样系统"
+      ]
+    },
+    {
+      "id": "documentary",
+      "name": "纪实探索",
+      "description": "纪录片式深度探究，追根溯源",
+      "tone": "客观严谨、探索精神、有深度",
+      "interaction": "叙述为主，对话为辅",
+      "recommended_for": ["standard", "deep"],
+      "features": [
+        "从历史背景切入",
+        "追溯知识的发展脉络",
+        "展现研究过程和思考",
+        "注重事实和数据支撑",
+        "像BBC纪录片的叙事"
+      ]
+    },
+    {
+      "id": "hot_topic",
+      "name": "热点解读",
+      "description": "从热点事件切入，深挖背后知识",
+      "tone": "时效性强、角度新颖、接地气",
+      "interaction": "评论式对话",
+      "recommended_for": ["brief", "standard"],
+      "features": [
+        "从最新热点事件切入",
+        "分析背后的原理和规律",
+        "连接相关知识体系",
+        "预测未来趋势",
+        "像财经评论节目的风格"
+      ]
+    },
+    {
+      "id": "midnight_radio",
+      "name": "深夜电台",
+      "description": "温柔治愈的深夜陪伴，在静谧中分享知识与思考",
+      "tone": "温柔细腻、治愈温暖、娓娓道来、富有情感",
+      "interaction": "独白为主或温柔对话",
+      "recommended_for": ["brief", "standard", "deep"],
+      "features": [
+        "放慢节奏，营造安静氛围",
+        "声音温柔舒缓，像深夜的陪伴",
+        "可以是单人独白，也可以是温柔对话",
+        "融入情感共鸣和人生感悟",
+        "适合睡前倾听，抚慰心灵",
+        "音乐感强，像FM调频电台",
+        "真诚的分享而非说教"
+      ]
+    }
+  ],
+  "audio_mixing": {
+    "bgm_volume": 0.25,
+    "voice_volume": 1.0,
+    "description": "BGM和人声的混音音量配置（0.0-1.0，建议BGM: 0.2-0.35，人声: 1.0）"
+  }
+}

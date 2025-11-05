@@ -1,0 +1,105 @@
+{
+  "normalization": {
+    "enabled": true,
+    "mode": "compressor",
+    "mode_description": "音量处理模式: loudnorm（完全标准化）或 compressor（仅限制峰值）",
+    "description": "是否启用音频音量标准化（需要 ffmpeg）",
+    "fallback": "如果 ffmpeg 不可用，将自动降级到简单拼接"
+  },
+  "compressor": {
+    "threshold": -20,
+    "threshold_description": "压缩阈值 (dB)。高于此值的音频将被压缩，-20 表示避免过大的声音",
+    "ratio": 4,
+    "ratio_description": "压缩比。4:1 表示超过阈值的音量增加 4dB 只会实际增加 1dB",
+    "attack": 5,
+    "attack_description": "启动时间 (ms)。压缩器开始工作的速度，5ms 适合语音",
+    "release": 50,
+    "release_description": "释放时间 (ms)。压缩器停止工作的速度，50ms 适合自然过渡",
+    "makeup": 8,
+    "makeup_description": "补偿增益 (dB)。压缩后的音量补偿，8dB 可以显著提升音量"
+  },
+  "limiter": {
+    "enabled": true,
+    "limit": -1.0,
+    "limit_description": "最大峰值限制 (dB)。防止削波，-1.0 为安全值",
+    "release": 5,
+    "release_description": "限幅器释放时间 (ms)"
+  },
+  "loudnorm": {
+    "I": -16,
+    "I_description": "目标响度 (Integrated Loudness)，单位 LUFS。-16 是播客行业推荐标准",
+    "TP": -1.5,
+    "TP_description": "真实峰值限制 (True Peak)，单位 dBFS。避免削波失真",
+    "LRA": 11,
+    "LRA_description": "响度范围 (Loudness Range)，单位 LU。保持动态范围"
+  },
+  "standards": {
+    "podcast": {
+      "name": "播客标准",
+      "I": -16,
+      "TP": -1.5,
+      "LRA": 11,
+      "description": "适合播客内容，Spotify、Apple Podcasts 等平台的推荐标准"
+    },
+    "audiobook": {
+      "name": "有声书标准",
+      "I": -18,
+      "TP": -2,
+      "LRA": 8,
+      "description": "适合有声书内容，更低的响度和更小的动态范围"
+    },
+    "radio": {
+      "name": "广播标准",
+      "I": -23,
+      "TP": -1,
+      "LRA": 5,
+      "description": "适合广播内容，符合 EBU R128 原始标准"
+    },
+    "streaming": {
+      "name": "流媒体标准",
+      "I": -14,
+      "TP": -1,
+      "LRA": 11,
+      "description": "适合 YouTube、音乐流媒体等平台"
+    }
+  },
+  "processing": {
+    "sampleRate": 24000,
+    "sampleRate_description": "音频采样率（Hz），与 TTS 输出保持一致",
+    "tempDir": "temp",
+    "tempDir_description": "临时文件存储目录",
+    "cleanupOnError": true,
+    "cleanupOnError_description": "错误时是否清理临时文件"
+  },
+  "quality": {
+    "mp3": {
+      "bitrate": "320k",
+      "bitrate_description": "MP3 比特率，320k 为最高质量（CBR）",
+      "vbrQuality": 0,
+      "vbrQuality_description": "VBR 质量等级（0-9，0最高），优先使用 VBR"
+    },
+    "wav": {
+      "codec": "pcm_s16le",
+      "codec_description": "WAV 编码格式，pcm_s16le 为 16-bit PCM"
+    },
+    "ogg_opus": {
+      "bitrate": "256k",
+      "bitrate_description": "Opus 比特率"
+    },
+    "useVBR": true,
+    "useVBR_description": "是否使用 VBR（可变比特率），通常质量更好"
+  },
+  "performance": {
+    "concurrentNormalization": false,
+    "concurrentNormalization_description": "是否并行标准化多个音频片段（需要更多CPU资源）",
+    "maxConcurrent": 3,
+    "maxConcurrent_description": "最大并发标准化任务数（当 concurrentNormalization=true 时）"
+  },
+  "fallback": {
+    "onFfmpegMissing": "simple_concat",
+    "onFfmpegMissing_description": "ffmpeg 不可用时的降级策略：simple_concat（简单拼接）",
+    "onNormalizationError": "use_original",
+    "onNormalizationError_description": "音量标准化失败时的策略：use_original（使用原始音频）"
+  }
+}
+
